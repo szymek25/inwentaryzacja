@@ -23,7 +23,7 @@ public class Controller implements Initializable {
 	public void OnClickTest(javafx.event.ActionEvent actionEvent) throws IOException, InterruptedException {
 
 		Runtime r = Runtime.getRuntime();
-		Process p = r.exec("open -a Microsoft Excel /Users/wladysylawziomek/Desktop/inw/Wagi.xlsx");
+		Process p = r.exec("open -a \"Microsoft Excel\" /Users/wladysylawziomek/Desktop/inw/Wagi.xlsx");
 		p.waitFor();
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 		String line = "";
